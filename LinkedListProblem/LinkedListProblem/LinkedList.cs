@@ -46,7 +46,7 @@ namespace LinkedListProblem
             Node temp=this.head;
             if (temp==null)
             {
-                Console.WriteLine("Linked list is empty");
+                Console.WriteLine("List is empty");
             }
             while(temp!=null)
             {

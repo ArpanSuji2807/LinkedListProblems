@@ -6,7 +6,7 @@ class program
     {
         LinkedList list = new LinkedList();
         bool check=true;
-        Console.WriteLine("1.Simple Linked List");
+        Console.WriteLine("1.Simple Linked List\n2.Add in reverse order");
         while(check)
         {
             Console.WriteLine("Take an option to execute");
@@ -18,6 +18,11 @@ class program
                     list.Add(56);
                     list.Add(70);
                     break;
+                case 2:
+                    list.AddInReverseOrder(56);
+                    list.AddInReverseOrder(30);
+                    list.AddInReverseOrder(70);
+                    break ;
             }
         }
     }

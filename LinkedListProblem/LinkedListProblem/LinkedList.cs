@@ -27,5 +27,32 @@ namespace LinkedListProblem
             }
             Console.WriteLine("{0} inserted into Linked list", node.data);
         }
+        internal void AddInReverseOrder(int data)
+        {
+            Node newNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newNode;
+            }
+            else
+            {
+                Node temp = this.head;
+                head = newNode;
+            }
+            Display();
+        }
+        internal void Display()
+        {
+            Node temp=this.head;
+            if (temp==null)
+            {
+                Console.WriteLine("Linked list is empty");
+            }
+            while(temp!=null)
+            {
+                Console.WriteLine(temp.data+ " ");
+                temp=temp.next;
+            }
+        }
     }
 }

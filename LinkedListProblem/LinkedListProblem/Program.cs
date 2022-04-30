@@ -6,7 +6,7 @@ class program
     {
         LinkedList list = new LinkedList();
         bool check=true;
-        Console.WriteLine("1.Simple Linked List\n2.Add in reverse order\n3.Insert number at particular position\n4.Delete a number at particular position\n5.Delete Last Node\n6.Search for the element\n7.Add new element in the linked list");
+        Console.WriteLine("1.Simple Linked List\n2.Add in reverse order\n3.Insert number at particular position\n4.Delete a number at particular position\n5.Delete Last Node\n6.Search for the element\n7.Add new element in the linked list\n8.Delete new element");
         while(check)
         {
             Console.WriteLine("Take an option to execute");
@@ -56,6 +56,14 @@ class program
                     list.Add(30);
                     list.Add(40);
                     list.Add(70);
+                    list.Display();
+                    break;
+                case 8:
+                    list.Add(56);
+                    list.Add(30);
+                    list.Add(40);
+                    list.Add(70);
+                    list.DeleteNodeAtParticularPosition(2);
                     list.Display();
                     break;
                 default:break;
